@@ -24,7 +24,7 @@ function App() {
   }, []); //by adding the empty array we ensure that useEffect runs only once
 
   async function fetchData() {
-    const notesArray = await dkeeper.readNotes();
+    const notesArray = await dkeeper.readNotes(); //we see the notes everytime we load or render the window because it's calling readNotes method everytime
     setNotes(notesArray);
   }
 
