@@ -8,7 +8,7 @@ actor DKeeper {
         content: Text;
     };
 
-    stable var notes: List.List<Note> = List.nil<Note>();
+    stable var notes: List.List<Note> = List.nil<Note>();// a list of notes that starts empty and will contain all the notes as a database
 
     public func createNote(titleText: Text, contentText: Text) {
 
@@ -22,8 +22,8 @@ actor DKeeper {
 
     };
 
-    public query func readNotes(): async [Note] {
-        return List.toArray(notes);
+    public query func readNotes(): async [Note] { //return an array of Notes
+        return List.toArray(notes); //converting a list to array
     };
 
     public func removeNote(id: Nat) {
