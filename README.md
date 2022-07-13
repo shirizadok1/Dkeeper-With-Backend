@@ -1,3 +1,3 @@
 # Dkeeper-with-backend
 
-The back end is built with Motoko on the icp block chain.
+The front end is built with React.js and the back-end with Motoko on the icp block chain.
