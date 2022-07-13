@@ -29,15 +29,12 @@ function App() {
   }
 
   function deleteNote(id) {
+    
     dkeeper.removeNote(id);
-    console.log("*** notes before delete?", notes);
     setNotes(prevNotes => {
       const newItems = prevNotes.filter((noteItem, index) => {
-        console.log("*** nodeItem?", index , " - " , JSON.stringify(noteItem));
         return index !== id;
       });
-
-      console.log("*** newItems?" + JSON.stringify(newItems));
       return newItems;
     });
   }
