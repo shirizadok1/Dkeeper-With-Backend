@@ -1,7 +1,5 @@
 #Notes-keeper-with-backend
 
-http://127.0.0.1:8000/?canisterId=ryjl3-tyaaa-aaaaa-aaaba-cai
-
 The front end is built with React.js and the back-end with Motoko on the icp block chain.
 
 Insert as many notes as you wish:
